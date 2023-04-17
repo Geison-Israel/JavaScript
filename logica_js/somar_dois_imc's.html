@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc(altura, peso){
+		var imc = peso / (altura * altura);
+		return imc;//retorna o imc que foi calculado para cada pessoa. Outra opção é substiruir a variavel imc por retun, isso porque a unica instrução dentro de calculaImc é o proprio return.
+	}
+
+	var imcFlavio = calculaImc(1.71, 73);
+	var imcAmigo = calculaImc(1.72, 68);
+
+	mostra(imcFlavio);
+	mostra(imcAmigo);
+	
+</script>
